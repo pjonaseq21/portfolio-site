@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import logo from './assets/pc.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+       <>
+       <div className=" main bg-[url('./assets/pc.png')]  h-screen bg-cover bg-center">
+       <span className='absolute top-1/4 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-lg text-white'>test</span>
+       </div>
+       </>
+     
+  )
 }
 
 export default App;
