@@ -24,7 +24,13 @@ body{
   opacity: 0; /* ukrywa podkreślenie */
   animation: underline 0.5s ease-in-out infinite alternate forwards;
 }
+#github {
+  transition: opacity 0.5s ease; /* Dodaje animację */
+}
 
+#github.hide {
+  opacity: 0;
+}
 @keyframes underline {
   from {
     opacity: 0;
