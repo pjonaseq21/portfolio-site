@@ -12,3 +12,24 @@ body{
   width: 1500px;
   height: 650;
 }
+.text {
+  position: relative;
+  display: inline-block;
+}
+.text::after {
+  content: "_"; /* dodaje podkreślenie w formie znaku */
+  position: absolute;
+  bottom: 0;
+  right: -1;
+  opacity: 0; /* ukrywa podkreślenie */
+  animation: underline 0.5s ease-in-out infinite alternate forwards;
+}
+
+@keyframes underline {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
